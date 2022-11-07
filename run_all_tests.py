@@ -20,3 +20,9 @@ for next_dir in os.listdir("."):
             print("Module: " + COL + next_dir + NC)
             os.system('cargo test -q --lib')
             popd()
+    elif os.path.exists(os.path.join(next_dir, "src/main.rs")):
+        if os.path.exists(os.path.join(next_dir, "Cargo.toml")):
+            pushd(next_dir)
+            print("Module: " + COL + next_dir + NC)
+            os.system('cargo test -q')
+            popd()
