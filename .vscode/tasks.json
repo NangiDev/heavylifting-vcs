@@ -9,15 +9,22 @@
 			"problemMatcher": []
 		},
 		{
+			"type": "shell",
+			"command": "./build_all_bin.py",
+			"group": {
+				"kind": "build",
+				"isDefault": true
+			},
+			"label": "python: Build all binaries in repo",
+			"problemMatcher": []
+		},
+		{
 			"type": "cargo",
 			"command": "build",
 			"problemMatcher": [
 				"$rustc"
 			],
-			"group": {
-				"kind": "build",
-				"isDefault": true
-			},
+			"group": "build",
 			"label": "rust: cargo build"
 		}
 	]
