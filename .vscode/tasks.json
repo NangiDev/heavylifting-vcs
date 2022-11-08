@@ -3,14 +3,14 @@
 	"tasks": [
 		{
 			"type": "shell",
-			"command": "./run_all_tests.py",
+			"command": "python ./run_all_tests.py",
 			"group": "test",
 			"label": "python: Run all tests in repo",
 			"problemMatcher": []
 		},
 		{
 			"type": "shell",
-			"command": "./build_all_bin.py",
+			"command": "python ./build_all_bin.py",
 			"group": {
 				"kind": "build",
 				"isDefault": true
